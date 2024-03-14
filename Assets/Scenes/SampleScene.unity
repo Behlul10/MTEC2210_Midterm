@@ -159,7 +159,7 @@ MonoBehaviour:
   coinText: {fileID: 0}
   speed: 15
   turboSpeed: 25
-  currentSpeed: 0
+  currentSpeed: 15
   dashCooldownTime: 1
   rb: {fileID: 50409631}
   jumpForce: 15
