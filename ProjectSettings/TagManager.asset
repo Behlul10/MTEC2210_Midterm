@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Item
+  - Coin
+  - Ground
+  - Hazard
+  - Transition
   layers:
   - Default
   - TransparentFX
