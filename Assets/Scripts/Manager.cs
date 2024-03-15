@@ -20,15 +20,15 @@ public class Manager : MonoBehaviour
     float timeElapsedDuck = 0;
     float timeElapsedFrog = 0;
 
-    [Range(1, 10)] public int coinCount = 5;
+    [Range(1, 25)] public int coinCount = 5;
     int currentCoinCount = 0;
 
 
-    [Range(1, 10)] public int duckCount = 5;
+    [Range(1, 25)] public int duckCount = 5;
     int currentDuckCount = 0;
 
 
-    [Range(1, 10)] public int frogCount = 5;
+    [Range(1, 25)] public int frogCount = 5;
     int currentFrogCount = 0;
 
     // Start is called before the first frame update

@@ -15,20 +15,19 @@ public class BoxDeleter : MonoBehaviour
     {
         
     }
-    /*
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Coin")
-        {
-            Destroy(collision.gameObject);
-        }
-    }*/
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Coin"))
         {
             Destroy(other.gameObject); // Destroy the coin
+        }
+        if (other.gameObject.CompareTag("Transition"))
+        {
+            Destroy(other.gameObject); // destroy froggy
+        }
+        if (other.gameObject.CompareTag("Hazard"))
+        {
+            Destroy(other.gameObject); // destroy duck
         }
     }
 
