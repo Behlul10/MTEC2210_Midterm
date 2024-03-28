@@ -7,23 +7,23 @@ public class Player : MonoBehaviour
 {
     public float speed;
     public float turboSpeed;
-    float currentSpeed;
-    public AudioClip clip;
-    AudioSource audiosource;
+    public float currentSpeed;
+    //public AudioClip clip;
+    //AudioSource audiosource;
+
     // Start is called before the first frame update
 
     private void Start()
     {
-        audiosource = GetComponent<AudioSource>();
+        //audiosource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
 
 
-    //update
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) 
+        if (Input.GetKey(KeyCode.J)) 
         {
             currentSpeed = turboSpeed;
             //sr.color = turboColor;
