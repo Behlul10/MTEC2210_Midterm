@@ -15,4 +15,7 @@ public class Froggy : MonoBehaviour
     {
         transform.Translate(0, -8 * Time.deltaTime, 0);
     }
+
+
+
 }

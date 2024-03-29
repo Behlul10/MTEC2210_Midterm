@@ -16,4 +16,22 @@ public class Bullet : MonoBehaviour
     {
         transform.Translate(0, speed * Time.deltaTime, 0);
     }
+
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject); // Destroy the coin
+        }
+        if (other.gameObject.CompareTag("Transition"))
+        {
+            Destroy(other.gameObject); // destroy froggy
+        }
+        if (other.gameObject.CompareTag("Hazard"))
+        {
+            Destroy(other.gameObject); // destroy duck
+        }
+    }
+
 }

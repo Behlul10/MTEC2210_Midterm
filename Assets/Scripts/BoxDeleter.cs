@@ -29,6 +29,10 @@ public class BoxDeleter : MonoBehaviour
         {
             Destroy(other.gameObject); // destroy duck
         }
+        if (other.gameObject.CompareTag("Bullet"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 
 }

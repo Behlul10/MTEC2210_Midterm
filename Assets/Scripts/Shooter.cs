@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
+    public float speed = 10;
+    float xMove;
+
     public GameObject bulletPrefab;
     // Start is called before the first frame update
     void Start()
@@ -14,10 +17,15 @@ public class Shooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        xMove = Input.GetAxisRaw("Horizontal");
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             SpawnBullet();
         }
+
+        transform.Translate(xMove * speed * Time.deltaTime, 0, 0);
+
     }
 
     void SpawnBullet()

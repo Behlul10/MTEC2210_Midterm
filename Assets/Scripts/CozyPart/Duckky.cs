@@ -16,4 +16,6 @@ public class Duckky : MonoBehaviour
         transform.Translate(0, -5 * Time.deltaTime, 0);
 
     }
+
+
 }
